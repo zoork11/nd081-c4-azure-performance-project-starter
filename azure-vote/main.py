@@ -23,7 +23,7 @@ from opencensus.trace.samplers import ProbabilitySampler
 from opencensus.trace.tracer import Tracer
 from opencensus.ext.flask.flask_middleware import FlaskMiddleware
 
-con_str='InstrumentationKey=95225c55-2b08-4788-a6be-c1ce78cf814f;IngestionEndpoint=https://westus-0.in.applicationinsights.azure.com/'
+con_str='InstrumentationKey=95225c55-2b08-4788-a6be-c1ce78cf814f'
 
 stats = stats_module.stats
 view_manager = stats.view_manager
