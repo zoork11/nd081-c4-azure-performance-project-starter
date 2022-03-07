@@ -29,6 +29,8 @@ stats = stats_module.stats
 view_manager = stats.view_manager
 
 # Logging
+config_integration.trace_integrations(['logging'])
+config_integration.trace_integrations(['requests'])
 logger = logging.getLogger(__name__)
 handler = AzureLogHandler(connection_string=con_str)
 handler.setFormatter(logging.Formatter('%(traceId)s %(spanId)s %(message)s'))
